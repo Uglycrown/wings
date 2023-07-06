@@ -6,6 +6,7 @@
   font-family: "Geologica", sans-serif;
   list-style: none;
   text-decoration: none;
+  background-color: #f3f3f3;
 }
 
 /* Logo */
@@ -77,6 +78,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  z-index: 1;
 }
 
 .get-in-touch-button {
@@ -99,5 +101,5 @@ header {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: -1;
+  z-index: 0;
 }
