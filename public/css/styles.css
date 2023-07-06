@@ -1,0 +1,103 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Geologica", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Logo */
+.logo {
+  width: 185px;
+  height: 51px;
+}
+
+/* Header */
+header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 136px;
+  background: transparent;
+}
+
+/* Navigation menu */
+.nav_menu {
+  display: flex;
+}
+
+.nav_menu a {
+  color: var(--wings-black, #110f0b);
+  font-size: 16px;
+  font-family: Geologica;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125.303%;
+  margin-left: 16px;
+  text-transform: uppercase;
+  background: transparent;
+}
+
+/* Menu icon */
+#menu-bar {
+  /* color: var(--wings-black, #110f0b); */
+  font-size: 26px;
+  cursor: pointer;
+  display: none;
+}
+
+/* index.ejs */
+
+/* banner */
+.banner {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.banner-title {
+  color: var(--wings-black, #110f0b);
+  text-align: left;
+  font: 500 62px "Geologica", sans-serif;
+  position: absolute;
+  top: 391px;
+  left: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.get-in-touch-button {
+  border-radius: 26px;
+  border: 1px solid var(--wings-black, #110f0b);
+  position: absolute;
+  top: 570px;
+  left: 48px;
+  color: var(--wings-black, #110f0b);
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125.303%;
+  text-transform: uppercase;
+  padding: 8px 16px;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
