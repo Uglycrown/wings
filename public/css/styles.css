@@ -6,21 +6,17 @@
   font-family: "Geologica", sans-serif;
   list-style: none;
   text-decoration: none;
-  background-color: #f3f3f3;
 }
 
 /* Logo */
-.logo {
+#logo {
   width: 185px;
   height: 51px;
 }
 
 /* Header */
 header {
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 1000;
+  z-index: 1;
   width: 100%;
   display: flex;
   align-items: center;
@@ -48,15 +44,12 @@ header {
 
 /* Menu icon */
 #menu-bar {
-  /* color: var(--wings-black, #110f0b); */
   font-size: 26px;
   cursor: pointer;
   display: none;
 }
 
-/* index.ejs */
-
-/* banner */
+/* Banner */
 .banner {
   height: 100%;
   width: 100%;
@@ -79,6 +72,20 @@ header {
   align-items: center;
   justify-content: flex-start;
   z-index: 1;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideInTitle 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) forwards;
+}
+
+@keyframes slideInTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .get-in-touch-button {
@@ -95,11 +102,91 @@ header {
   line-height: 125.303%;
   text-transform: uppercase;
   padding: 8px 16px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInButton 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) forwards;
+  animation-delay: 0.8s;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.get-in-touch-button:hover {
+  background-color: #e4b6dc;
+  color: #ffffff;
+}
+
+.get-in-touch-button:hover .ri-arrow-right-up-line {
+  background-color: #e4b6dc;
+  color: #ffffff;
+}
+
+@keyframes fadeInButton {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .background-image {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 0;
+  height: auto;
+  width: 600px;
+  margin-right: 80px;
+  opacity: 0;
+  transform: translateX(100px);
+  animation: fadeInImage 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) forwards;
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeInImage {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* About */
+
+/* footer */
+footer {
+  margin-right: 157.03px;
+  margin-left: 157.03px;
+}
+.footer-row-link,
+.footer-row-info,
+.footer-bottom {
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+}
+
+.navigate {
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: transparent;
+}
+
+.section-divider {
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+.footer_logo {
+  width: 132px;
+  height: 36.389px;
 }
