@@ -5,7 +5,7 @@ const router = express.Router();
 const routes = [
   { path: '/', template: 'index', title: 'Home' },
   { path: '/about', template: 'about', title: 'About' },
-  { path: '/project', template: 'project', title: 'Project' },
+  { path: '/project', template: 'project', title: 'project' },
   { path: '/services', template: 'services', title: 'Services' },
   { path: '/thoughts', template: 'thoughts', title: 'Thoughts' }
 ];
